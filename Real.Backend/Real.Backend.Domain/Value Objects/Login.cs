@@ -38,7 +38,7 @@ namespace Real.Backend.Domain.ValueObjects
 
 			if (!string.IsNullOrEmpty(pass))
 			{
-				string password = (pass += "|ED2BCA0C-7EF7-409E-ABE7-90BAC55F5DFE");
+				string password = (pass += "|Use a Key here");
 
 				MD5 md5 = MD5.Create();
 				byte[] data = md5.ComputeHash(Encoding.Default.GetBytes(password));
